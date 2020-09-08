@@ -1,0 +1,430 @@
+            @font-face {
+    font-family: 'MapoGoldenPier';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoGoldenPierA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, div, h1, p{margin: 0;}
+body{ position: relative; background: black;
+	}
+h1, p{ color: white;
+		font-family: 'MapoGoldenPier';}
+p{line-height: 1.9em; word-break: keep-all; font-size: 1.2em;}
+
+#moniter{width: 80px; height: 30px; background: black; color: white; position: fixed; top: 0; right: 0;}
+
+		@keyframes lo{
+				from{left: -100px;} to{left: 0px;}
+			}
+		@keyframes ro{
+				from{right: 100px;} to{right: 0px;}
+			}
+
+#titlee{
+	width: 1200px;
+	height: 610px;
+	position: absolute;
+	left: calc(50% - 600px);
+	top: 0px;
+	background: #CC1919;
+
+}
+
+#yell3{
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+}
+
+#yell4{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	transform: rotate(180deg);
+}
+
+#titlee h1{
+	width: 300px;
+	height: 100px;
+	position: absolute;
+	left: calc(50% - 150px);
+	top: calc(50% - 50px);
+	text-align: center;
+	font-size: 3em;
+}
+
+
+.warp{
+	width: 1200px; height: 6900px; position: absolute;
+	left: calc(50% - 600px);
+	top: 610px;
+	background: url(back0.gif);
+	overflow: hidden;
+}
+
+@media (max-width: 980px){
+	.warp{
+		left: calc(50% - 490px);
+	}
+	#titlee{
+		left: calc(50% - 490px);
+	}
+}
+
+
+/*이미지 css*/
+#back1{
+	width: 1200px;
+	height: 750px;
+	position: absolute;
+	left: calc(50% - 600px);
+	top: 0px;
+	background: #CC1919;
+}
+#back1-1{
+	width: 1000px;
+	height: 250px;
+	position: absolute;
+	right: 0px;
+	top: 600px;
+	background: #CC1919;
+}
+
+#yell{
+	position: absolute;
+	left: calc(50% - 600px);
+}
+
+
+#yell2{
+	position: absolute;
+	left: 0px;
+}
+
+#back5{
+	position: absolute;
+	width: 1200px;
+	height: 1000px;
+	bottom: 0px;
+	left: calc(50% - 600px);
+	background: linear-gradient(45deg, #4d3f61 50%, black);
+}
+
+#sul1{
+	position: absolute;
+	left: 50px;
+	top: 2000px;
+	animation: sull 3s infinite linear;
+}
+
+#sul1{
+	position: absolute;
+	left: 200px;
+	top: 2000px;
+	animation: sull 4s infinite linear;
+}
+#sul2{
+	position: absolute;
+	left: 400px;
+	top: 2000px;
+	animation: sull 3s 0.2s infinite linear;
+}
+#sul3{
+	position: absolute;
+	left: 100px;
+	top: 2000px;
+	animation: sull 5s 1s infinite linear;
+}
+#sul4{
+	position: absolute;
+	left: 600px;
+	top: 2000px;
+	animation: sull 3s 0.7s infinite linear;
+}
+#sul5{
+	position: absolute;
+	left: 500px;
+	top: 2000px;
+	animation: sull 5s 0.3s infinite linear;
+}
+
+@keyframes sull { 
+				to {position: absolute; transform: rotate(360deg); top: 3500px;}
+				from {position: absolute; top: 1300px;}
+			}
+
+#person1{
+	position: absolute;
+	right: 300px;
+	top: 620px;
+}
+
+@keyframes permove { 
+				to {right: 250px; top: 650px; position: absolute;}
+			}
+
+#trash{
+	position: absolute;
+	left: 12px;
+	top: 150px;
+	transition: all 2s;
+	}
+
+@keyframes trmove { 
+				to {transform: rotate(20deg); left: 100px; top: 210px; position: absolute;}
+			}
+
+#run{
+	position: absolute;
+	top: 750px;
+	right: 10px;
+	transition: all 10s;
+}
+
+@keyframes runn { 
+				to {top: 1700px; position: absolute;}
+			}
+
+#cry1{
+	position: absolute;
+	left: calc(50% - 600px);
+	top: 740px;
+}
+
+
+
+#hand1{
+	position: absolute;
+	right: -50px;
+	top: 2200px;
+	width: 500px;
+	height: auto;
+	animation: plz 1s infinite linear alternate;
+}
+
+@keyframes plz { 
+				to {position: absolute; top: 2250px; transform: rotate(-5deg);}
+			}
+
+#monster{
+	position: absolute;
+	left: calc(50% - 493px);
+	top:  1008px;
+	animation: bigcell 0.2s infinite ease-in alternate;
+}
+
+@keyframes bigcell { 
+				to {position: absolute;left: 158px; top: 1024px; transform: rotate(-5deg);}
+			}
+
+#monster_hand{
+	position: absolute;
+	left: -150px;
+	top:  1600px;
+	animation: monhand 0.5s infinite linear alternate;
+}
+
+@keyframes monhand { 
+				to {position: absolute; transform: rotate(-50deg); left: 100px; top: 1650px;}
+			}
+
+
+#lon{
+	position: absolute;
+	left: calc(50% - 132.5px);
+	top: 3200px;
+}
+
+#people1{
+	position: absolute;
+	top: 2670px;
+	left: -100px;
+	animation: peppep 0.5s infinite linear alternate;
+}
+
+@keyframes peppep { 
+				to {position: absolute; transform: translateY(5%);}
+			}
+
+#people2{
+	position: absolute;
+	top: 2990px;
+	left: -50px;
+	animation: peppep 0.4s infinite linear alternate;
+}
+
+
+#people3{
+	position: absolute;
+	top: 2650px;
+	right: 0px;
+	animation: peppep 0.3s infinite linear alternate;
+}
+
+#people4{
+	position: absolute;
+	top: 2905px;
+	right: -20px;
+	animation: peppep 0.5s infinite linear alternate;
+}
+
+#people7{
+	position: absolute;
+	top: 3250px;
+	left: -50px;
+	width: 336px;
+	height: 352px;
+	background: #58697A;
+	border:2px solid #494949;
+	border-radius: 50%;
+	animation: peppep 0.5s infinite linear alternate;
+
+}
+
+#mouth{
+	position: absolute;
+	left: calc(50% - 314px);
+	top: 4200px;
+	animation: mouthh 0.1s infinite linear alternate;
+}
+
+@keyframes mouth { 
+				to {position: absolute;transform: translateY(2%); transform: scale(1.3);}
+			}
+
+@keyframes mouthh { 
+				to {position: absolute; transform: rotate(3deg);}
+			}
+
+
+#people8{
+	position: absolute;
+	right: -70px;
+	top: 3280px;
+	width: 336px;
+	height: 352px;
+	background: #58697A;
+	border:2px solid #494949;
+	border-radius: 50%;
+	animation: peppep 0.4s infinite linear alternate;
+
+}
+
+
+#people5{
+	position: absolute;
+	top: 3390px;
+	left: 0px;
+	animation: peppe 0.5s infinite linear alternate;
+}
+
+
+#people6{
+	position: absolute;
+	top: 3390px;
+	right: 0px;
+	/*좌우반전*/
+	 -moz-tranform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+    animation: hah 1s linear infinite alternate;
+    animation: peppe 0.5s infinite linear alternate;
+}
+
+@keyframes peppe { 
+				to {position: absolute; top: 3350px;}
+			}
+
+
+#back3{
+	position: absolute;
+	left: calc(50% - 600px);
+	top: 3550px;
+}
+
+#cry2{
+	position: absolute;
+	left: calc(50% - 600px);
+	top: 3800px;
+	animation: crry 0.1s infinite linear alternate;
+}
+
+@keyframes crry { 
+				to {position: absolute; transform: rotate(-3deg);}
+			}
+
+#back4{
+	position: absolute;
+	left: calc(50% - 600px);
+	bottom: 550px;
+}
+
+#xxx{
+	position: absolute;
+	bottom: 1790px;
+	left: 410px;
+	opacity: 0%;
+	transition: all 0.05s;
+}
+
+#notebook{
+	position: absolute;
+	left: -10px;
+	bottom: -5px;
+}
+
+#hand2{
+	position: absolute;
+	right: -10px;
+	bottom: 935px;
+	animation: handtw 0.2s infinite linear alternate;
+}
+
+@keyframes handtw { 
+				to {position: absolute; transform: rotate(-9deg);}
+			}
+
+/*텍스트 css*/
+
+.spanclass{
+	background: black;
+	padding: 2px;
+}
+
+.maintext{
+	width: 600px; height: 300px;
+	left: calc(50% - 300px);
+	top: 50px;
+	position: absolute;
+	text-align: center;
+}
+
+#text1{
+	top: 750px;
+}
+
+#text2{
+	top: 2400px;
+}
+
+#text3{
+	top: 3300px;
+}
+
+#text4{
+	top: 4350px;
+}
+
+#text5{
+	top: 5400px;
+	opacity: 0%;
+	transition: all 2s;
+}
+
+#text6{
+	top: 6200px;
+}
